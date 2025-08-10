@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+class ProfilePage extends StatelessWidget {
+  const ProfilePage({super.key});
 
   @override
   Widget build(BuildContext context) => Container(
-        color: Colors.red,
+        color: const Color.fromARGB(255, 243, 33, 163),
         child: const Center(
           child: Text(
-            "Casa",
+            "Foi?",
             style: TextStyle(fontSize: 60, color: Colors.white),
           ),
         ),

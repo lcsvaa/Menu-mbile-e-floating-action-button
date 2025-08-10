@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter_speed_dial/flutter_speed_dial.dart';
 import 'package:menu_negacao/page/home_page.dart';
+import 'package:menu_negacao/page/profile_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -54,12 +55,7 @@ class _HomeScreenState extends State<HomeScreen> {
         style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
       ),
     ),
-    const Center(
-      child: Text(
-        "Profile",
-        style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
-      ),
-    ),
+    const ProfilePage(),
   ];
 
   @override
@@ -101,18 +97,20 @@ class _HomeScreenState extends State<HomeScreen> {
                 spacing: 10,
                 spaceBetweenChildren: 8,
                 openCloseDial: isDialOpen,
-              
                 children: [
                   SpeedDialChild(
-                    child: Icon(Icons.note_add),backgroundColor: Colors.red,
+                    child: const Icon(Icons.note_add),
+                    backgroundColor: Colors.red,
                     label: "Adiciona nota",
                   ),
                   SpeedDialChild(
-                    child: Icon(Icons.pets),backgroundColor: Colors.lightGreen,
+                    child: const Icon(Icons.pets),
+                    backgroundColor: Colors.lightGreen,
                     label: "Pet",
                   ),
                   SpeedDialChild(
-                    child: Icon(Icons.settings),backgroundColor: Colors.blue,
+                    child: const Icon(Icons.settings),
+                    backgroundColor: Colors.blue,
                     label: "Configurações",
                   ),
                 ],
