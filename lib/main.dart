@@ -42,7 +42,7 @@ class _HomeScreenState extends State<HomeScreen> {
   ];
 
   late final screens = [
-    const HomePage(),
+    HomePage(),
     const Center(
       child: Text(
         "Search",
@@ -55,7 +55,7 @@ class _HomeScreenState extends State<HomeScreen> {
         style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
       ),
     ),
-    const ProfilePage(),
+    ProfilePage(),
   ];
 
   @override

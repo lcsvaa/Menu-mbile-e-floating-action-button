@@ -8,7 +8,7 @@ class HomePage extends StatelessWidget {
         color: Colors.red,
         child: const Center(
           child: Text(
-            "Casa",
+            "Oi",
             style: TextStyle(fontSize: 60, color: Colors.white),
           ),
         ),
